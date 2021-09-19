@@ -23,8 +23,11 @@
 		"allowJs": true,
 		"checkJs": true,
 		"paths": {
-			"$lib": ["src/lib"],
-			"$lib/*": ["src/lib/*"]
+			"$/*": ["src/*"],
+			"$routes/*": ["src/routes/*"],
+			"$app/*": [".svelte-kit/dev/runtime/app/*"],
+			"$components/*": ["src/components/*"],
+			"$stores/*": ["src/stores/*"]
 		}
 	},
 	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.ts", "src/**/*.svelte"]
